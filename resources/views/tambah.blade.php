@@ -1,28 +1,58 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
-</head>
-<body>
+@extends('template')
 
-	<h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
+@section('content')
 	<h3>Data Pegawai</h3>
 
-	<a href="/pegawai"> Kembali</a>
+	<a href="/pegawai" class="btn btn-info"> Kembali</a>
 
 	<br/>
 	<br/>
 
 	<form action="/pegawai/store" method="post">
 		{{ csrf_field() }}
-		Nama <input type="text" name="nama"> <br/>
-		Jabatan <input type="text" name="jabatan"> <br/>
-		Umur <input type="number" name="umur"> <br/>
-		Alamat <textarea name="alamat"></textarea> <br/>
-		<input type="submit" value="Simpan Data">
+        <div class="row">
+            <div class="col-3">
+                Nama
+            </div>
+            <div class="col-8">
+                <input type="text" required="required" name="nama" class="form-control">
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-3">
+                Jabatan
+            </div>
+            <div class="col-8">
+                <input type="text" required="required" name="jabatan" class="form-control">
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-3">
+                Umur
+            </div>
+            <div class="col-8">
+                <input type="number" required="required" name="umur" class="form-control">
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-3">
+                Alamat
+            </div>
+            <div class="col-8">
+                <textarea required="required" name="alamat" class="form-control"></textarea>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-8">
+                <input type="submit" value="Simpan Data" class="btn btn-success">
+            </div>
+        </div>                
+		
 	</form>
 
-
-
-</body>
-</html>
+@endsection
