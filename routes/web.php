@@ -6,7 +6,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\Link;
 use App\Http\Controllers\Pegawai2Controller;
 use App\Http\Controllers\KaryawanController;
-
+use App\Http\Controllers\SepedaMotorController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -80,3 +80,4 @@ Route::get('/pegawai/hapus/{id}', [PegawaiController::class,'hapus'] );
 Route::get('/pegawai/cari', [PegawaiController::class, 'cari']);
 // Route ini akan menangani semua request ke /karyawan
 Route::resource('karyawan', KaryawanController::class);
+Route::resource('sepedamotor', SepedaMotorController::class);
