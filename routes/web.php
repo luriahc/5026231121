@@ -8,6 +8,7 @@ use App\Http\Controllers\Pegawai2Controller;
 use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\SepedaMotorController;
 use App\Http\Controllers\KeranjangController;
+use App\Http\Controllers\NewKaryawanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -85,3 +86,4 @@ Route::resource('karyawan', KaryawanController::class);
 Route::resource('sepedamotor', SepedaMotorController::class);
 
 Route::resource('/keranjang', KeranjangController::class);
+Route::resource('/newkaryawan', NewKaryawanController::class);

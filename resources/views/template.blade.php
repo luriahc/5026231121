@@ -36,13 +36,13 @@
                 <a class="nav-link" href="/sepedamotor">Tugas CRUD</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">EAS</a>
+                <a class="nav-link" href="/newkaryawan">EAS</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/karyawan">Latihan 1</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 2</a>
+                <a class="nav-link" href="/keranjang">Latihan 2</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Latihan 3</a>
